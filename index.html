@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web para venta de velas personalizadas para la noche de velitas que es una celebración tradicional en navidad">
     <title>Luz de navidad</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/carrousel.js"></script>
-    <script defer src="./js/lightbox.js"></script>
 </head>
 
 <body>
+    <!-- Encabezado landing Page luz de navidad -->
     <header class="header">
         <input type="checkbox" class="header__checkbox" id="menu">
         <label for="menu" class="header__open-nav-button">=</label>
@@ -40,7 +40,7 @@
         </section>
 
         <section class="products">
-            <div class="carrousel">
+            <!-- <div class="carrousel">
                 <h2>Disfruta con nuestros productos en la noche de velitas.</h2>
                 <div class="container-images">
                     <img src="./assets/img/velapesebre/vela-pesebre-caja-small.jpeg" alt="imagen 1" class="img">
@@ -50,52 +50,69 @@
                     <li class="punto activo"></li>
                     <li class="punto"></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="categories">
-                <h2>Categorias</h2>
-                <div class="categories__products">
-                    <div class="product" data-category="velasBaby">
-                        <p class="product__available">Velas baby x 10</p>
-                    <picture>
-                        <source class="product__image" media="(max-width: 500px)" srcset="./assets/img/velababy/velas-paquete-10-small.jpeg">
-                        <img src="./assets/img/vela-paquete-10.jpeg" id="velasBaby" alt="" srcset="">
-                        <div class="capa"></div>
-                    </picture>
-                    </div>
-                    <div class="product" data-category="velasPesebre">
-                        <p class="product__available">Velas personalizadas pesebre</p>
-                        <picture>
-                            <source class="product__image" media="(max-width: 500px)" srcset="./assets/img/velapesebre/vela-pesebre-caja-small.jpeg">
-                            <img src="./assets/img/vela-paquete-10.jpeg" alt="" srcset="">
-                            <div class="capa"></div>
-                        </picture>
-                    </div>
-                    <div class="product">
-                        <p class="product__available">Velas personalizadas nombres</p>
-                        <picture>
-                            <source class="product__image" media="(max-width: 500px)" srcset="assets/img/velas-personalizada-small.jpeg">
-                            <img src="./assets/img/vela-paquete-10.jpeg" alt="" srcset="">
-                            <div class="capa"></div>
-                        </picture>
-                    </div>
-                    <div class="product">
-                        <p class="product__available">Plantilla nombres stickers</p>
-                        <picture>
-                            <source class="product__image" media="(max-width: 300px)" srcset="./assets/img/stickers-small.jpg">
-                            <img src="./assets/img/stickers-small.jpg" alt="" srcset="">
-                            <div class="capa"></div>
-                        </picture>
+                <div class="categories__products-container">
+                    <h2>Categorias</h2>
+                    <div class="categories__products">
+                        <div class="product" data-category="velasBaby">
+                            <p class="product__available">Velas baby x 10</p>
+                            <picture>
+                                <source class="product__image" media="(max-width: 500px)"
+                                    srcset="./assets/img/velababy/velas-paquete-10-small.jpeg">
+                                <img src="./assets/img/vela-paquete-10.jpeg" id="velasBaby" alt="" srcset="">
+                                <div class="capa"></div>
+                            </picture>
+                        </div>
+                        <div class="product" data-category="velasPesebre">
+                            <p class="product__available">Velas personalizadas pesebre</p>
+                            <picture>
+                                <source class="product__image" media="(max-width: 500px)"
+                                    srcset="./assets/img/velapesebre/vela-pesebre-caja-small.jpeg">
+                                <img src="./assets/img/vela-paquete-10.jpeg" alt="" srcset="">
+                                <div class="capa"></div>
+                            </picture>
+                        </div>
+                        <div class="product">
+                            <p class="product__available">Velas personalizadas nombres</p>
+                            <picture>
+                                <source class="product__image" media="(max-width: 500px)"
+                                    srcset="assets/img/velas-personalizada-small.jpeg">
+                                <img src="./assets/img/vela-paquete-10.jpeg" alt="" srcset="">
+                                <div class="capa"></div>
+                            </picture>
+                        </div>
+                        <div class="product">
+                            <p class="product__available">Plantilla nombres stickers</p>
+                            <picture>
+                                <source class="product__image" media="(max-width: 300px)"
+                                    srcset="./assets/img/stickers-small.jpg">
+                                <img src="./assets/img/stickers-small.jpg" alt="" srcset="">
+                                <div class="capa"></div>
+                            </picture>
+                        </div>
                     </div>
                 </div>
-                 <div class="lightbox">
+
+                <div class="lightbox">
                     <button class="lightbox__close">x</button>
-                    <div class="lightbox__carrousel">
+                    <div class="lightbox__carrousel-container">
+                        <div class="lightbox__carrousel">
+                        </div>
+                        <div class="buttons__carousel">
+                            <button id="prev" class="lightbox__after"><</button>
+                            <button id="next" class="lightbox__next">></button>
+                        </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </section>
     </main>
     <footer></footer>
+
+    <script defer src="./js/carrousel.js"></script>
+    <script defer src="./js/lightbox.js"></script>
+
 </body>
 
 </html>
