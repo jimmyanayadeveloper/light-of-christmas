@@ -4,7 +4,7 @@
 }
 
 
-body, main, div, ul, nav, header, footer, a, li, label {
+body, main, div, ul, nav, header, footer, a, li, label, h1 {
     margin: 0;
     padding: 0;
 }
@@ -197,7 +197,7 @@ body {
     position: absolute;
     top: 0;
     width: auto;
-    text-align: center
+    text-align: center;
 }
 
 .main__title h1 {
@@ -213,7 +213,8 @@ body {
 
 .main__title .main__christmas-message p {
     font-size: 1.4rem;
-    color: var(--color-template-light-background);   
+    color: var(--color-template-light-background);
+    margin: 12rem 0;   
 }
 
 /* --- MAIN-TITLE END ---  */
@@ -290,10 +291,17 @@ body {
 }
 
 .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
     margin: auto;
     position: relative;
+}
+
+.categories .title__section {
+    color: var(--color-teplate-light-red);
 }
 
 .categories__products-container {
@@ -301,8 +309,8 @@ body {
     margin: auto;
 }
 
-.categories h2 {
-    color: var(--color-teplate-light-red);
+.title__section {
+    font-size: 1.6rem;
 }
 
 .categories__products {
@@ -333,7 +341,6 @@ body {
     text-align: center;
     font-weight: bold;
     z-index: 20;
-    
 }
 
 .product img {
@@ -380,11 +387,6 @@ body {
     font-size: 2rem;
     z-index: 20;
     margin-right: 10px;
-}
-
-.lightbox .dialog-image {
-    transform: scale(1.5);
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,.4);
 }
 
 .lightbox.isActive {
@@ -465,7 +467,86 @@ body {
 /* --- PRODUCTS SECTION  --- */
 
 
+/* --- CONTACT SECTION --- */
 
+.footer {
+    width: 100%;
+}
 
+.contact {
+    background-color: var(--color-teplate-light-red);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--color-template-light-background);
+}
+
+.contact .title__section {
+    color: var(--color-template-light-background);
+}
+
+.contact .contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__info h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.contact  p{
+    font-size: 1.2rem;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.contact__icons-social {
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 1rem;
+}
+
+.icon__container {
+    background-color: var(--color-template-light-background);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__icons-whatsapp {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icons/whastapp.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact__icons-facebook {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icons/facebook.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact__icons-instagran {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icons/instagran.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact .copyright {
+    margin-top: 5px;
+    width: 100%;
+}
 
 
