@@ -7,31 +7,37 @@ const categories = {
 
 const productsList = document.querySelectorAll(".product");
 const lightbox = document.querySelector(".lightbox");
-const dialogImage = document.querySelector(".dialog-image");
-const closeButton = document.querySelector(".lightbox__close");
+const lightboxClose = document.getElementById("lightbox__close");
 const lightboxCarrousel = document.querySelector(".lightbox__carrousel");
 
+function closeLightbox() {
+    lightbox.classList.add('hidden');
+    lightboxCarrousel.style.transform = `translateX(0%)` 
+}
 
-productsList.forEach( (eachProduct) => {
-    eachProduct.addEventListener('click', () => {
-        lightboxCarrousel.innerHTML = '';
+function openLightbox(eachProduct) {
+        lightboxCarrousel.innerHTML = ''
         const category = eachProduct.getAttribute('data-category');
         const images = categories[category] || [];
-
         images.forEach(image => {
             const imageCandle = document.createElement('img');
             imageCandle.src = image;
             imageCandle.classList.add('lightbox__carousel-item')
-            lightboxCarrousel.appendChild(imageCandle); 
+            lightboxCarrousel.appendChild(imageCandle);
         });
-        lightbox.classList.add('isActive');
-        document.body.classList.add('no-scroll');
-    });
-});
+    lightbox.classList.remove('hidden');
+}
 
-closeButton.addEventListener('click', () => {
-    
-    lightboxCarrousel.style.transform = `translateX(0%)`
-    lightbox.classList.remove('isActive');
-    document.body.classList.remove('no-scroll');
+lightboxClose.addEventListener('click', closeLightbox);
+
+productsList.forEach( (eachProduct) => {
+    eachProduct.addEventListener('click', () => {
+    openLightbox(eachProduct)
+    })
 })
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox ) {
+        closeLightbox()
+    }
+});

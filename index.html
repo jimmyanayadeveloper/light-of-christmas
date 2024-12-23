@@ -15,7 +15,8 @@
     <header class="header">
         <input type="checkbox" class="header__checkbox" id="menu">
         <label for="menu" class="header__open-nav-button" aria-label="Abrir menú de navegación">=</label>
-        <label for="menu" class="header__close-nav-button" aria-label="Cerrar menú de navegación  id="close-menu">x</label>
+        <label for="menu" class="header__close-nav-button" aria-label="Cerrar menú de navegación  id="
+            close-menu">x</label>
 
         <nav class="header__navigation" aria-label="Main navigation">
             <div class="title-menu">
@@ -37,7 +38,8 @@
             <div class="main__title">
                 <h1 id="main__title-page">Luz de navidad</h1>
                 <div class="main__christmas-message">
-                    <p id="main__description-page">Enciende una vela, cierra tus ojos, pide un deseo y deja que la magia empiece</p>
+                    <p id="main__description-page">Enciende una vela, cierra tus ojos, pide un deseo y deja que la magia
+                        empiece</p>
                 </div>
             </div>
         </section>
@@ -54,7 +56,8 @@
                                 <picture>
                                     <source class="product__image" media="(max-width: 500px)"
                                         srcset="./assets/img/velababy/velas-paquete-10-small.jpeg">
-                                    <img src="./assets/img/vela-paquete-10.jpeg" id="velasBaby" alt="Velas baby paquete x 10 unidades">
+                                    <img src="./assets/img/vela-paquete-10.jpeg" id="velasBaby"
+                                        alt="Velas baby paquete x 10 unidades">
                                     <div class="capa"></div>
                                 </picture>
                                 <figcaption>Velas baby en paquete por 10 unidades.</figcaption>
@@ -66,9 +69,11 @@
                                 <picture>
                                     <source class="product__image" media="(max-width: 500px)"
                                         srcset="./assets/img/velapesebre/vela-pesebre-caja-small.jpeg">
-                                    <img src="./assets/img/vela-paquete-10.jpeg" alt="Velas baby personalizada con figuras del pesebre paquete x 10 unidades">
+                                    <img src="./assets/img/vela-paquete-10.jpeg"
+                                        alt="Velas baby personalizada con figuras del pesebre paquete x 10 unidades">
                                     <div class="capa"></div>
-                                    <figcaption>Velas baby personalizada con figuras del pesebre paquete x 10 unidades.</figcaption>
+                                    <figcaption>Velas baby personalizada con figuras del pesebre paquete x 10 unidades.
+                                    </figcaption>
                                 </picture>
                             </figure>
                         </article>
@@ -78,7 +83,8 @@
                                 <picture>
                                     <source class="product__image" media="(max-width: 500px)"
                                         srcset="assets/img/velas-personalizada-small.jpeg">
-                                    <img src="./assets/img/vela-paquete-10.jpeg" alt="Velas baby personalizadas con nombres caja x 12 unidades">
+                                    <img src="./assets/img/vela-paquete-10.jpeg"
+                                        alt="Velas baby personalizadas con nombres caja x 12 unidades">
                                     <div class="capa"></div>
                                     <figcaption>Velas baby personalizadas con nombres caja x 12 unidades.</figcaption>
                                 </picture>
@@ -90,25 +96,28 @@
                                 <picture>
                                     <source class="product__image" media="(max-width: 300px)"
                                         srcset="./assets/img/stickers-small.jpg">
-                                    <img src="./assets/img/stickers-small.jpg" alt="Sticker con nombres plantilla con mas de 30 nombres">
+                                    <img src="./assets/img/stickers-small.jpg"
+                                        alt="Sticker con nombres plantilla con mas de 30 nombres">
                                     <div class="capa"></div>
                                     <figcaption>Sticker con nombres plantilla con mas de 30 nombres</figcaption>
                                 </picture>
                             </figure>
                         </article>
                     </div>
-                </div>
-                <div class="lightbox">
-                    <button class="lightbox__close">x</button>
-                    <div class="lightbox__carrousel-container">
-                        <div class="lightbox__carrousel"></div>
-                        <div class="buttons__carousel">
-                            <button id="prev" class="lightbox__after"><</button>
-                            <button id="next" class="lightbox__next">></button>
+
+                    <div id="lightbox" class="lightbox hidden">
+                        <div class="lightbox__content">
+                            <div class="lightbox__carrousel-container">
+                                <div class="lightbox__carrousel"></div>
+                                <div class="buttons__carousel">
+                                    <button id="prev" class="lightbox__after"><</button>
+                                    <button id="next" class="lightbox__next">></button>
+                                </div>
+                                <button id="lightbox__close" class="close-btn" aria-label="Cerrar">&times</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- PRODUCTS SECTION END -->
     </main>
@@ -117,7 +126,7 @@
     <!-- FOOTER SECTION -->
     <footer class="footer">
         <section id="contact" class="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title" class="title__section">Contactanos facilmente</h2>    
+            <h2 id="contact-title" class="title__section">Contactanos facilmente</h2>
             <address class="contact__info">
                 <h3>Autoservicio Merkofamiliar</h3>
                 <p>Calle 197 # 27c - 105 Barrio el recreo Floridablanca</p>
@@ -128,7 +137,7 @@
                     <div class="contact__icons-whatsapp" role="link" aria-label="WhatsApp"></div>
                 </div>
                 <div class="icon__container">
-                    <div class="contact__icons-facebook" role="link" aria-label="Facebook" ></div>
+                    <div class="contact__icons-facebook" role="link" aria-label="Facebook"></div>
                 </div>
                 <div class="icon__container">
                     <div class="contact__icons-instagran" role="link" aria-label="Instagram"></div>
@@ -144,4 +153,5 @@
     <script defer src="./js/carrousel.js"></script>
     <script defer src="./js/lightbox.js"></script>
 </body>
+
 </html>
