@@ -439,7 +439,7 @@ body {
 .buttons__carousel button {
     border: none;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--color-teplate-light-red);
     color: var(--color-template-light-background);
     font-size: 1.4rem;
     cursor: pointer;
@@ -448,7 +448,7 @@ body {
 
 
 .buttons__carousel button:hover {
-    background-color: #2980b9; /* Azul más oscuro */
+    background-color: var(--color-template-light-yellow); /* Azul más oscuro */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
   }
   
