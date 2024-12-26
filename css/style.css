@@ -298,7 +298,6 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     width: 100%;
     margin: auto;
     position: relative;
@@ -483,6 +482,7 @@ body.no-scroll {
     justify-content: center;
     padding: 1rem;
     color: var(--color-template-light-background);
+    margin-top: 1.5rem;
 }
 
 .contact .title__section {
