@@ -13,15 +13,17 @@
 <body>
     <!-- START HEADER SECTION LANDING PAGE luz de navidad -->
     <header class="header">
-        <button id="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <div>
+            <button id="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        </div>
+        <div class="header__menu">
+            <h2>Luz de navidad</h2>
+        </div>
     </header>
     <!-- END HEADER SECTION -->
 
     <!-- START NAVIGATION MENU -->
     <nav id="menu" class="menu" aria-hidden="true">
-        <div class="menu__title">
-            <h2>Luz de navidad</h2>
-        </div>
         <ul class="menu__title-list">
             <li class="menu__navigation-item"><a class="menu__navigation-option" href="#home">Inicio</a></li>
             <li class="menu__navigation-item"><a class="menu__navigation-option" href="#products">Productos</a></li>
@@ -51,11 +53,11 @@
                     <div class="categories__products">
                         <article class="product" data-category="velasBaby">
                             <p class="product__available">Velas baby x 10</p>
-                            <figure>
+                            <figure class="product__figure">
                                 <picture>
                                     <source class="product__image" media="(max-width: 500px)"
                                         srcset="./assets/img/velababy/velas-paquete-10-small.jpeg">
-                                    <img src="./assets/img/vela-paquete-10.jpeg" id="velasBaby"
+                                    <img src="./assets/img/velababy/vela-paquete-10.jpeg" id="velasBaby"
                                         alt="Velas baby paquete x 10 unidades">
                                     <div class="capa"></div>
                                 </picture>
@@ -64,7 +66,7 @@
                         </article>
                         <article class="product" data-category="velasPesebre">
                             <p class="product__available">Velas personalizadas pesebre</p>
-                            <figure>
+                            <figure class="product__figure">
                                 <picture>
                                     <source class="product__image" media="(max-width: 500px)"
                                         srcset="./assets/img/velapesebre/vela-pesebre-caja-small.jpeg">
@@ -78,7 +80,7 @@
                         </article>
                         <article class="product" data-category="velasNombre">
                             <p class="product__available">Velas personalizadas nombres</p>
-                            <figure>
+                            <figure class="product__figure">
                                 <picture>
                                     <source class="product__image" media="(max-width: 500px)"
                                         srcset="assets/img/velas-personalizada-small.jpeg">
@@ -91,7 +93,7 @@
                         </article>
                         <article class="product" data-category="stickersNombre">
                             <p class="product__available">Plantilla nombres stickers</p>
-                            <figure>
+                            <figure class="product__figure">
                                 <picture>
                                     <source class="product__image" media="(max-width: 300px)"
                                         srcset="./assets/img/stickers-small.jpg">

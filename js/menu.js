@@ -4,6 +4,8 @@ const menuToggle = document.getElementById("menu-toggle");
 const menu       = document.getElementById("menu");
 const close      = document.getElementById("menu-close");
 const body       = document.body;
+/* const header     = document.querySelector(".header"); 
+const headerMenu = document.querySelector(".header__menu");   */
 
 // Toggle menu visibility
 menuToggle.addEventListener("click", () => {
